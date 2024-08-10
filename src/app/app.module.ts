@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularDocxViewerModule } from 'angular-docx-viewer';
+import { AngularDocxViewerModule, AngularImageViewerModule } from 'angular-docx-viewer';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { AngularDocxViewerModule } from 'angular-docx-viewer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularDocxViewerModule
+    AngularDocxViewerModule,
+    AngularImageViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

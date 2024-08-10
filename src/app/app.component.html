@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<!-- <div style="text-align: center">
     <div class="d-flex">
       <button
         *ngFor="let viewer of viewers"
@@ -42,7 +42,7 @@
       </ng-container>
     </div>
     {{selectedDoc}}
-    <lib-angular-docx-viewer
+    <angular-docx-viewer
       queryParams="hl=Nl"
       class="angular-doc"
       [url]="selectedDoc"
@@ -50,6 +50,19 @@
       [viewer]="selectedViewer.name"
       overrideLocalhost="https://angular-doc-viewer.firebaseapp.com/"
       style="width: 100%; height: 80vh"
-    ></lib-angular-docx-viewer>
+    ></angular-docx-viewer>
   </div>
-  
+   -->
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="display: flex">
+  <div style="width: 100%; display: flex">
+    <angular-image-viewer
+      [src]="images"
+      [(config)]="config"
+      [(index)]="imageIndexOne"
+      (customEvent)="handleEvent($event)"
+    >
+    </angular-image-viewer>
+  </div>
+</div>

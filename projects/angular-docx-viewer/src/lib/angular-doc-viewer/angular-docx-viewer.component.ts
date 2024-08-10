@@ -3,7 +3,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { getDocxToHtml, getViewerDetails, googleCheckSubscription, iframeIsLoaded, IFrameReloader, isLocalFile, replaceLocalUrl, ViewerType } from 'docviewhelper';
 
 @Component({
-  selector: 'lib-angular-docx-viewer',
+  selector: 'angular-docx-viewer',
   templateUrl: './angular-docx-viewer.component.html',
   styleUrls: ['./angular-docx-viewer.component.scss'],
 })
